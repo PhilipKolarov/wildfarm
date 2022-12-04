@@ -1,0 +1,17 @@
+from animals.bird_class import Bird
+
+
+class Hen(Bird):
+    def __init__(self, name, weight, wing_size):
+        super().__init__(name, weight, wing_size)
+
+    @property
+    def foods_allowed(self):
+        return ['Fruit', 'Vegetable', 'Meat', 'Seed']
+
+    @property
+    def weight_incremental(self):
+        return 0.35
+
+    def make_sound(self):
+        return "Cluck"
